@@ -1,0 +1,20 @@
+<section id="sec1">
+    <h1>Hello {{username}}, you are a {{ occupation }}!</h1>
+    @if (doesUserExist) {
+    <p>Felicidades!</p>
+    }
+    @else {
+    <p>Never Exits</p>
+    }
+    
+</section>
+<section id="sec2">
+    <h2>cuales son los sistemas operativos:</h2>
+    <ul>@for(os of operatingSystems; track os.id){
+        <li (click)="onMouseOver(os.name)">{{ os.name }}</li>
+        }
+    </ul>
+    <div class="editable-div" [contentEditable]="isEditable">
+        <p>Prueba</p>
+    </div>
+</section>

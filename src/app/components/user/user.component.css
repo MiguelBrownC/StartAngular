@@ -1,0 +1,10 @@
+#sec1 {
+    padding: 5px;
+    background-color: chocolate;
+}
+
+.editable-div {
+    padding: 5px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+}
